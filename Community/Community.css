@@ -1,0 +1,394 @@
+body
+{
+    box-sizing: border-box;
+}
+#all-content
+{
+    display: grid;
+    grid-template-areas: 
+    "aside main";
+    grid-template-columns: 270px 1fr;
+    gap: 40px;
+
+}
+
+#all-content
+{
+    margin: 50px;
+}
+ 
+#side-content{
+    width: 100%;
+}
+
+aside
+{
+    grid-area: aside;
+    width: 100%;
+}
+
+
+.side-content-heading
+{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+/* --------------------------- */
+.age-select{
+    background-color:#F2F2F2;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.age-select-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.age-select-card
+{
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px 2px;
+    padding: 8px 4px;
+    max-width: 120px;
+}
+.age-select-card span
+{
+    font-size: 11px;
+    font-weight: 100;
+    padding:  4px;
+}
+
+.aside-min-headings
+{   
+    margin-top: 0px;
+    font-weight: 200;
+    background-color:#F2F2F2;
+   
+    padding: 10px;
+}
+.topic-border
+{
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px; 
+}
+
+
+.topics-select
+{   background-color: white;
+    padding-top: 0px;
+    border:1px solid #E0E0E0 ;
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px; 
+}
+.selections
+{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 10px;
+}
+.checkbox input{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E0E0E0;
+    border-radius: 112px;
+    accent-color:#2563eb; /* Blue */
+    cursor:pointer;
+}
+
+.selections label
+{
+    font-size: 11px;
+    font-weight: 100;
+}
+
+
+
+#main-content
+{
+    width: 100%;
+    grid-area: main;
+}
+.cards-section-1
+{
+    background-color:#9dccff63;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.section-1-card
+{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 20px 10px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.section-1-img img
+{ 
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: top;
+
+}
+
+.cards-section-1-text{
+    font-size: 14px;
+}
+
+/* RANGE MODIFICATIONS */
+#section-1-card-range 
+{
+    width: 100%;
+    border-radius: 20px;
+    color: #2563eb;
+}
+#section-1-card-range{
+    width:100%;
+    appearance:none;
+    -webkit-appearance:none;
+    height:6px;
+    background:#ddd;
+    border-radius:20px;
+    outline:none;
+    cursor:pointer;
+}
+
+/* Track */
+#section-1-card-range::-webkit-slider-runnable-track{
+    height:6px;
+    background:#ddd;
+    border-radius:20px;
+}
+
+/* Thumb */
+#section-1-card-range::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:#2563eb;
+    margin-top:-4px;
+}
+
+#section-1-card-range::-moz-range-track{
+    height:6px;
+    background:#ddd;
+    border-radius:20px;
+}
+
+#section-1-card-range::-moz-range-thumb{
+    width:14px;
+    height:14px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+}
+
+.cards-section-1-text-profile
+{
+    align-items: center;
+}
+
+.section-1-card-profile-image
+{
+    width: 15px;
+    object-fit: cover;
+}
+.section-1-card-lesson
+{
+    text-align: right;
+
+}
+
+
+
+
+/* RECOMMENDED COURSES */
+
+
+
+
+
+
+
+
+
+.community-solutions
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.community-reviews
+{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+.community-review-outer-card
+{
+   
+    background-color: #315DEC3B;
+    border-radius: 20px;
+    width: 40%;
+    height: 150px;
+
+    align-content: center;
+    padding: 5px;
+}
+
+.community-review-inner-card
+{
+    width: 90%;
+    
+    margin: 20px;
+    padding: 10px;
+    padding-right: 0px;
+    background-color: white;
+    border-radius: 20px;
+    height: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* overflow:hidden; */
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.community-review-profile
+{
+    display: flex;
+    align-items: center;
+}
+.community-review-profile-img
+{
+    border-radius: 60px;
+    object-fit: cover;
+    width: 30px;
+}
+.community-review-rating
+{
+    font-size: 9px;
+}
+.community-review-txt
+{
+    font-size: 10px;
+    height: 80%;
+    width: 80%;
+    overflow: hidden;
+
+}
+
+.review-read
+{
+    color: blue;
+    background: none;
+    border: none;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 12px ;
+}
+.search-bar
+{
+    background-color:#F5F5F5;
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+}
+.search-bar input
+{
+    border: none;
+    background:none;
+}
+
+.purchase-headings
+{
+    display: flex;
+    justify-content: space-between;
+}
+.community-review-outer-card{
+    background:#315DEC3B;
+    border-radius:20px;
+    width:30%;
+    height:150px;
+
+    transition:all .35s ease;
+}
+
+.community-review-outer-card.expanded{
+    height:auto;
+}
+
+.community-review-inner-card{
+    /* width:85%; */
+    margin:auto;
+    padding:10px;
+    background:#fff;
+    border-radius:20px;
+
+    transition:all .35s ease;
+}
+
+.community-review-txt,.community-review-profile-txt{
+    font-size:10px;
+    height:80%;
+    /* overflow:hidden; */
+    transition:all .35s ease;
+}
+
+#solution
+{
+    width: 100%;
+    border-radius: 30px;
+    background:none;
+    border: 1px solid #00000026;
+    color: #00000026;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 13px;
+}
+#solution input
+{
+    color: #00000054;
+    border: none;
+    height: 100%;
+    width:  100%;
+}
+#solution input:focus-within
+{
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+#solution-btn
+{
+    width: 15%;
+    height: 30px;
+    margin: 0;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    background-color: #2563eb;
+}

@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family: "DM Sans", sans-serif;
+    background:#fff;
+}
+
+.container{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:35px;
+    margin-bottom: 30px;
+}
+
+
+.brand
+{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-left: -80px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.logo
+{
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    position: relative;
+    top: -30px;
+}
+.brand span{
+
+    font-size:30px;
+}
+
+
+
+.progress-bar{
+    margin-top: -120px;
+    width:380px;
+    display:flex;
+    gap:8px;
+    margin-bottom:35px;
+}
+
+.line{
+
+    flex:1;
+    height:3px;
+    background:#E5E5E5;
+    border-radius:10px;
+}
+
+.line.active{
+
+    background:#55C271;
+}
+
+/* Heading */
+
+h2{
+
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+/* Profile */
+
+form
+{
+    width: 450px
+}
+
+.box
+{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    box-shadow: #bcb4b4 0px 0px 10px 2px ;
+    border-radius: 22px;
+}
+
+input[type="checkbox"] {
+  accent-color: #2196F3; /* Changes checked background to blue */
+  transform: scale(1.5);  /* Optional: Increases the checkbox size */
+}
+
+.box:has(input[type="checkbox"]:checked) 
+{
+   background-color: rgb(41, 154, 41);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 4px solid wheat;
+    border-radius: 22px;
+}
+
+textarea
+{   font-size: 18px;
+    background-color: white;
+    padding: 10px 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    box-shadow: #bcb4b4 0px 0px 10px 2px ;
+    border: transparent;
+    border-radius: 22px;
+    position:relative;
+}
+
+textarea::selection
+{
+    outline: none;
+    background: none;
+    border: none
+}
+
+
+.counter
+{
+    position: relative;
+    bottom: 38px;
+    left : 370px;
+}
+
+
+#form_block
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btn{
+
+    display:block;
+    margin:30px auto 0;
+    width:180px;
+    height:48px;
+    border:none;
+    border-radius:25px;
+    background:#3B6EF6;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom: 100px;
+}
+
+
+
+
+footer
+{
+    width: 100%;
+    background-color: #315DEC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 16px;
+}
+
+.brand_footer   
+{   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    /* margin-left: -115px; */
+    /* margin-top: 20px;  */
+    font-size: 18;
+}
+
+.footer_section div img
+{
+
+    width: 80px;
+    object-fit: contain;
+    position: relative;
+    top: 5px;
+}
+.top
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+hr
+{
+    height: 40px;
+    border: 0.1px solid rgb(79, 79, 172);
+}
+
+#line_three
+{
+    text-align: center;
+}
+
+
+#subscription
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+#subscription input
+{
+    color: white;
+    background:none;
+    border: 0.01px solid white;
+    border-radius: 30px;
+    padding: 8px 20px;
+    min-width: 260px;
+
+}
+#subscription input::placeholder
+{
+    color: white;
+    background:none;
+}
+
+#subscription button
+{
+    color: white;
+    background:#55A65E;
+    border: none;   
+    border-radius: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+
+}
+.terms_and_policy
+{   
+    margin-top: 70px ;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.terms_and_policy hr
+{
+    height: 10px;
+}
+
+.terms_and_policy a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+#line_four
+{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+#otherText
+{   width: 450px;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px 20px;
+    height: 100px;
+    
+    
+    justify-content: space-between;
+    color: black;
+    box-shadow: #bcb4b4 0px 0px 10px 2px ;
+    border: transparent;
+    border-radius: 22px;
+    position:relative;
+}

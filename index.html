@@ -1,71 +1,952 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Document</title>
-  </head>
-  <body id="login_page">
-    <main id="main">
-      <section id="left">
-        <img src="login_img.jpg" alt="" class="image" width="600px" height="1200px"/>
-         <h3 class="p1" >Lorem Ipsum is simply </h3> <p class="p2">Lorem Ipsum is simply </p>
-      </section>
+</head>
 
-    <section id="right">
-       
-        <div class="brand">
-          <img src="logo.png" alt="" class="logo" />
-          <span>Parent<b>Genius</b></span>
-        </div>
+<body>
+    <header>
+         <!-- Background Image -->
+            <img src="index_images/bg_back.webp" alt="" class="hero-bg">
 
-        <p id="line_one">Welcome to the ParentGenius</p>
-        
-        <div class="option">
-            <a href="index.html" id="log">login</a>
-            <a href="/login/Registration.html" id="reg">Register</a>
-        </div>
-        <p id="line_two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque eius eos?</p>
-        
-        <form action="submit" id="login_form">
-            <label for="username">Username</label>
-            <input type="text" id="username" class="inputs"  placeholder="Enter Your Username">
-        
-            <label for="pass">Password</label>
-            <input type="password" id="pass"  class="inputs" placeholder="Enter Your Password">
-        
-            <div id="remember">
-                <div>
-                   <input type="checkbox" name="remember_me" id="chck_box"><label for="chck_box">Remember me</label>
-                </div>
+            <!-- Blue Overlay -->
+           <div class="hero-overlay"></div>
 
-                <a href="">Forgot Password ?</a>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/index_images/site_logo.png" alt="" width="180px" />
             </div>
 
-            <button type="button" class="btn-login"  onclick="window.location.href='../Goal_and_Priorities/page1.html'">Login</button>
-        </form>
+            <div>
+                <ul class="nav-links">
+                    <li onclick="window.location.href='../index.html'">Home</li>
+                    <li onclick="window.location.href='../Courses/course_page1.html'">Courses</li>
+                    <li onclick="window.location.href='../Resources/Resources_pg1.html'">Resources</li>
+                    <li onclick="window.location.href='../Therapy/Therapy.html'">Therapy</li>
+                    <li onclick="window.location.href='../Community/Community.html'">Community</li>
+                    <li onclick="window.location.href='../Challenge/Challenge.html'">Challenges</li>
+                    <li class="image" onclick="window.location.href='../training/tutorials-guidance.html'">
+                        <img src="index_images/navbar_icon.png" alt="" width="22px" />
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-buttons">
+                <button id="login" onclick="window.location.href='../login/login.html'">login</button>
+                <button id="signup" onclick="window.location.href='../login/Registration.html'" >Sign up</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+
+           
+            <div class="hero_content">
+                <h1 id="hero_content_main_Heading">
+                    Even a 10-minute play break can brighten your child’s day.
+                </h1>
+                <h3>ParentGenius is an interesting platform that will teach you in more an interactive way</h3>
+
+                <div id="hero-btn">
+                    <button id="join">Join for free</button>
+
+
+                    <img src="index_images/play.jpg" alt="" id="play_img">
+
+
+                    <h6>Watch how it works</h6>
+                </div>
+            </div>
+
+            <div id="hero_image">
+                <img src="index_images/bg_front.png" alt="" id="hero_img">
+                <!-- <img src="index_images/wave.png" alt="" id="wave"> -->
+        </section>
+    </header>
+
+    <section class="second">
+        <h2>All-In-One <b style="color: green;"> Training Center </b></h2>
+        <p>ParentGenius is a powerful online platform that brings together all the essential tools to run a successful
+            training center for children and parents.</p>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">
+                    <img src="/index_images/card1.png" alt="">
+                </div>
+                <h3 class="card-heading1">Parent Training</h3>
+                <h6 class="card-text"> Guiding parents with the skills, tools, and confidence they need to support their
+                    child’s growth and development.</h6>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <img src="/index_images/card2.jpg" alt="" id="card2_img">
+                </div>
+                <h3 class="card-heading2">Child Training</h3>
+                <h6 class="card-text">Empowering children with essential skills, confidence, and guidance to learn,
+                    grow, and succeed in every stage of life.</h6>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <img src="/index_images/card2.webp" alt="">
+                </div>
+                <h3 class="card-heading3">Guided Tutorials</h3>
+                <h6 class="card-text">Easy-to-follow tutorials designed to simplify learning for both parents and
+                    children, making every step clear and practical.</h6>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FEATURES SECTION   -->
+
+
+
+
+
+    <section class="features">
+        <h2 class="features_heading">Our<b style="color: #315DEC;"> Features</b></h2>
+        <p class="features_text">This very extraordinary feature, can make learning activities more efficient</p>
+
+        <div class="features_content">
+            <div class="features_content_part1">
+                <div class="p1_left">
+                    <h1><b style="color:#315DEC ;">Guidance Progress Path </b>For Parents and Childrens</h1>
+                    <p class="features_content_text">Track and support every stage of your child’s learning journey with
+                        clear guidance for parents and structured training for children.</p>
+                </div>
+
+                <div class="p1_right">
+                    <section class="challenge-section">
+
+                        <div class="dots"></div>
+
+                        <div class="dot blue top"></div>
+                        <div class="dot blue bottom"></div>
+                        <div class="dot green left"></div>
+
+                        <div class="challenge-card">
+
+                            <div class="card-left">
+                                <p class="date">3 APRIL, 2025</p>
+
+                                <h2>30-Day<br>Challenges</h2>
+
+                                <button>Continue Challenge</button>
+                            </div>
+
+                            <div class="card-right">
+
+                                <div class="progress-ring">
+                                    <div class="inner-circle">
+                                        <span>65%</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class="features_content_part2">
+                <div class="part2_left">
+                    <section class="therapy-section">
+
+                        <!-- Decorative circles -->
+                        <div class="circle blue"></div>
+                        <div class="circle green-top"></div>
+                        <div class="circle green-bottom"></div>
+                        <div class="circle pink"></div>
+
+                        <!-- Main Image -->
+                        <div class="therapy-image">
+                            <img src="/index_images/feature_img1.jpg" alt="Therapy Session">
+                        </div>
+
+                        <!-- Floating Card -->
+                        <div class="therapy-card">
+
+                            <div class="card-icon">
+                                <img src="/index_images/therapycard_2.png" alt="">
+                            </div>
+
+                            <div class="part2-card-text">
+                                <h3>Expert Therapist</h3>
+                                <h3>Guidance</h3>
+                            </div>
+
+                            <div class="status-circle"></div>
+
+                        </div>
+
+                    </section>
+                </div>
+
+                <div class="part2_right"></div>
+                <div>
+                    <h1>Guided <b style="color:#315DEC ;">Therapy <br>Sessions </b></h1>
+                    <p class="features_content_text">Professional therapy sessions designed to support children’s
+                        emotional well-being and provide parents with guidance to nurture growth at home</p>
+
+                </div>
+
+            </div>
+
+            <div class="features_content_part3">
+                <div class="part3_left">
+                    <h1><b style="color:#315DEC ;">Community Support Solutions</b> For Every Problem</h1>
+                    <p class="features_content_text">Creating a supportive community where parents, children, and
+                        trainers can share experiences, find solutions, and grow together.</p>
+
+                </div>
+
+                <div class="part3_right">
+                    <section class="community">
+
+                        <!-- Background Decoration -->
+                        <div class="star-badge"><img src="/index_images/star.jpg" alt="" width="50px"></div>
+                        <div class="book-badge"><img src="/index_images/book.png" alt=""></div>
+
+                        <div class="blue-box"></div>
+
+                        <div class="circle light-blue"></div>
+                        <!-- <div class="circle small-blue"></div> -->
+
+                        <div class="wave">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+
+                        <!-- Main Card -->
+                        <div class="community-card">
+
+                            <div class="green-header">
+                                Community Solutions
+                            </div>
+
+                            <div class="profile">
+
+                                <img src="/index_images/community_solution_img1.png">
+
+                                <span class="badge">
+                                    Sleep & Routines
+                                </span>
+
+                            </div>
+
+                            <div class="blue-line"><span>⭐</span></div>
+
+                            <div class="review review-back">
+                                <div class=" review-back_info"> <img src="/index_images/comunity_solution_image2.jpg"
+                                        alt="">
+                                    <pre> Cat Lover .22july ⭐⭐⭐⭐⭐(30)</pre>
+                                </div>
+                                <p>
+                                    KaiB was amazing with our cats!! 🌟🌟🌟 This was our first time using a pet-sitting
+                                    service, so we were naturally quite anxious. We took a chance on Kai and completely
+                                    lucked out! We booked Kai to come twice a day for three days. Kai spent a
+                                    considerable
+                                    amount of time playing and engaging with our cats. She also sent us very funny and
+                                    detailed reports at the end of each session. She truly gave us peace of mind while
+                                    on
+                                    holiday, knowing our furbabies were in good hands. We also kept looking forward to
+                                    her
+                                    cute updates! You can tell she’s a natural with animals. I'd definitely book her
+                                    again.
+                                    Highly recommended!</p>
+                                <button class="read-btn">Read more</button>
+                            </div>
+
+                            <div class="review review-front">
+                                <div class=" review-front_info"> <img src="/index_images/comunity_solution_image2.jpg"
+                                        alt="">
+                                    <pre> Cat Lover .22july ⭐⭐⭐⭐⭐(30)</pre>
+                                </div>
+
+                                <p>
+                                    KaiB was amazing with our cats!! 🌟🌟🌟 This was our first time using a pet-sitting
+                                    service, so we were naturally quite anxious. We took a chance on Kai and completely
+                                    lucked out! We booked Kai to come twice a day for three days. Kai spent a
+                                    considerable
+                                    amount of time playing and engaging with our cats. She also sent us very funny and
+                                    detailed reports at the end of each session. She truly gave us peace of mind while
+                                    on
+                                    holiday, knowing our furbabies were in good hands. We also kept looking forward to
+                                    her
+                                    cute updates! You can tell she’s a natural with animals. I'd definitely book her
+                                    again.
+                                    Highly recommended!</p>
+                                <button class="read-btn">Read more</button>
+                            </div>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
 
     </section>
-    </main>
+
+
+    <section class="courses">
+        <div class="courses-content">
+            <div class="main-heading">
+                <pre>Comprehensive </pre>
+                <pre>Parent & 
+Child Courses</pre>
+            </div>
+
+            <div class="courses_text">
+                <p>Courses for you</p>
+                <a href="">See all</a>
+            </div>
+
+            <div class="course-cards">
+                <div class="course-card">
+                    <div>
+                        <div class="course-img"> <img src="/index_images/course1.png" alt=""> </div>
+                        <div class="course-details">
+                            <div class="course_name"><i class="bi bi-grid"></i> Parenting Guidance</div>
+                            <div class="course_duration"><i class="bi bi-clock"></i> 3 Month</div>
+                        </div>
+                        <h3>Step-by-Step Parenting and Children Guidance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <button class="course-btn">View Detail</button>
+                    </div>
+                </div>
+
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-img"> <img src="/index_images/course1.png" alt=""> </div>
+                        <div class="course-details">
+                            <div class="course_name"><i class="bi bi-grid"></i> Parenting Guidance</div>
+                            <div class="course_duration"><i class="bi bi-clock"></i> 3 Month</div>
+                        </div>
+                        <h3>Step-by-Step Parenting and Children Guidance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <button class="course-btn">View Detail</button>
+                    </div>
+                </div>
+
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-img"> <img src="/index_images/course1.png" alt=""> </div>
+                        <div class="course-details">
+                            <div class="course_name"><i class="bi bi-grid"></i> Parenting Guidance</div>
+                            <div class="course_duration"><i class="bi bi-clock"></i> 3 Month</div>
+                        </div>
+                        <h3>Step-by-Step Parenting and Children Guidance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <button class="course-btn">View Detail</button>
+                    </div>
+                </div>
+
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-img"> <img src="/index_images/course1.png" alt=""> </div>
+                        <div class="course-details">
+                            <div class="course_name"><i class="bi bi-grid"></i> Parenting Guidance</div>
+                            <div class="course_duration"><i class="bi bi-clock"></i> 3 Month</div>
+                        </div>
+                        <h3>Step-by-Step Parenting and Children Guidance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                        <button class="course-btn">View Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="courses-section-2">
+        <div class="courses-section-2-content">
+
+            <div class="main-heading">
+                <pre>Comprehensive </pre>
+                <pre>Parent & 
+Child Courses</pre>
+            </div>
+
+
+
+            <div class="section2-cards">
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+
+                </div>
+
+                <section class="hidden">
+                    <div class="section2-card ">
+                        <div class="section2-card-left">
+                            <img src="/index_images/section2_course.png" alt="">
+                        </div>
+                        <div class="section2-card-right">
+                            <h3>The Time Has Come</h3>
+                            <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                            <div class="price">
+                                <span>$ 27.89</span>
+                                <span>$ 30.99</span>
+                            </div>
+                            <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                        </div>
+                    </div>
+
+
+                    <div class="section2-card ">
+                        <div class="section2-card-left">
+                            <img src="/index_images/section2_course.png" alt="">
+                        </div>
+                        <div class="section2-card-right">
+                            <h3>The Time Has Come</h3>
+                            <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                            <div class="price">
+                                <span>$ 27.89</span>
+                                <span>$ 30.99</span>
+                            </div>
+                            <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                        </div>
+                    </div>
+
+
+                    <div class="section2-card ">
+                        <div class="section2-card-left">
+                            <img src="/index_images/section2_course.png" alt="">
+                        </div>
+                        <div class="section2-card-right">
+                            <h3>The Time Has Come</h3>
+                            <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                            <div class="price">
+                                <span>$ 27.89</span>
+                                <span>$ 30.99</span>
+                            </div>
+                            <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <button type="button" class="see-all-btn" id="unhide-courses">see all</button>
+        </div>
+    </section>
+
+
+    <section class="courses-section-2">
+        <div class="courses-section-2-content">
+
+            <div class="main-heading">
+                <pre>Comprehensive </pre>
+                <pre> Parent & 
+Child Software Solutions</pre>
+            </div>
+
+
+
+            <div class="section2-cards">
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+                </div>
+
+
+                <div class="section2-card">
+                    <div class="section2-card-left">
+                        <img src="/index_images/section2_course.png" alt="">
+                    </div>
+                    <div class="section2-card-right">
+                        <h3>The Time Has Come</h3>
+                        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                        <div class="price">
+                            <span>$ 27.89</span>
+                            <span>$ 30.99</span>
+                        </div>
+                        <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                    </div>
+
+                </div>
+
+                <section class="hidden2">
+                    <div class="section2-card ">
+                        <div class="section2-card-left">
+                            <img src="/index_images/section2_course.png" alt="">
+                        </div>
+                        <div class="section2-card-right">
+                            <h3>The Time Has Come</h3>
+                            <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                            <div class="price">
+                                <span>$ 27.89</span>
+                                <span>$ 30.99</span>
+                            </div>
+                            <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                        </div>
+                    </div>
+
+
+                    <div class="section2-card ">
+                        <div class="section2-card-left">
+                            <img src="/index_images/section2_course.png" alt="">
+                        </div>
+                        <div class="section2-card-right">
+                            <h3>The Time Has Come</h3>
+                            <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                            <div class="price">
+                                <span>$ 27.89</span>
+                                <span>$ 30.99</span>
+                            </div>
+                            <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                        </div>
+                    </div>
+
+
+                    <div class="section2-card ">
+                        <div class="section2-card-left">
+                            <img src="/index_images/section2_course.png" alt="">
+                        </div>
+                        <div class="section2-card-right">
+                            <h3>The Time Has Come</h3>
+                            <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
+                            <div class="price">
+                                <span>$ 27.89</span>
+                                <span>$ 30.99</span>
+                            </div>
+                            <button class="course-section2-btn"><i class="bi bi-cart"></i> Add to basket</button>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <button type="button" class="see-all-btn" id="unhide-courses-2">see all</button>
+        </div>
+    </section>
+
+
+    <section class="subscription">
+
+        <div class="subscription-card">
+            <div>
+                <p style="color:blue;">Like a pussy</p>
+                <div class="subscript-heading">
+                    <h2>Free</h2>
+                    <p>/FOREVER</p>
+                </div>
+
+                <ul class="subs-benefits-list">
+                    <li class="sub-list"><i class="bi bi-check "></i> Components-driven system</li>
+                    <li class="sub-list"><i class="bi bi-check"></i> Sales-boosting landing pages</li>
+                    <li class="sub-list"><i class="bi bi-check"></i> Awesome Feather icons pack</li>
+                </ul>
+
+            </div>
+            <div><button class="subscription-btn ">Try for free</button></div>
+        </div>
+
+
+
+        <div class="subscription-card">
+            <div>
+                <p style="color:blue;"><i class="bi bi-person-fill text-primary" style="font-size: 2rem;"></i>Individual
+                </p>
+                <div class="subscript-heading">
+                    <h2>Free</h2>
+                    <p>/FOREVER</p>
+                </div>
+
+
+                <ul class="subs-benefits-list">
+                    <li class="sub-list"><i class="bi bi-check single"></i> Components-driven system</li>
+                    <li class="sub-list"><i class="bi bi-check single"></i> Sales-boosting landing pages</li>
+                    <li class="sub-list"><i class="bi bi-check single"></i> Awesome Feather icons pack</li>
+                    <li class="sub-list"><i class="bi bi-check single"></i> Themed into 3 different styles</li>
+                    <li class="sub-list"><i class="bi bi-check single"></i> Will help to learn Figma</li>
+                </ul>
+
+            </div>
+            <div><button class="subscription-btn ">Regular License</button></div>
+        </div>
+
+
+        <div class="subscription-card">
+
+            <div>
+                <p style="color:blue;"><i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
+                    Corporate</p>
+                <div class="subscript-heading">
+                    <h2>Free</h2>
+                    <p>/FOREVER</p>
+                </div>
+
+
+                <ul class="subs-benefits-list">
+                    <li class="sub-list"><i class="bi bi-check group"></i> Components-driven system</li>
+                    <li class="sub-list"><i class="bi bi-check group"></i> Sales-boosting landing pages</li>
+                    <li class="sub-list"><i class="bi bi-check group"></i> Awesome Feather icons pack</li>
+                    <li class="sub-list"><i class="bi bi-check group"></i> Themed into 3 different styles</li>
+                </ul>
+
+            </div>
+            <div><button class="subscription-btn ">Extended License</button></div>
+        </div>
+    </section>
+
+
+
+    <section class="testimonial">
+
+        <!-- Left Side -->
+        <div class="left">
+
+            <span class="tag"> ---------TESTIMONIAL</span>
+
+            <h2>What They Say?</h2>
+
+            <p>
+                TOTC has got more than 100k positive ratings
+                from our users around the world.
+            </p>
+
+            <p>
+                Some of the students and teachers were greatly
+                helped by the Skilline.
+            </p>
+
+            <p>
+                Are you too? Please give your assessment
+            </p>
+
+            <button id="testimonial-btn">
+                <span> Write your assessment </span>
+                <span>➜</span>
+            </button>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right">
+
+            <img src="/index_images/student.jpg " width="200px">
+
+            <div class="testimonial-review">
+                <div class="testimonial-upper">
+                    <hr>
+                    <p>
+                        "Thank you so much for your help. It's exactly what I've been looking for. You won't regret it.
+                        It really saves me time and effort. TOTC is exactly what our business has been lacking."
+                    </p>
+                </div>
+                <div class="testimonial-bottom">
+                    
+                    <div class="testimonial-bottom-text">
+                        <h4>Gloria Rose</h4>
+                    </div>
+
+                    <div class="stars">
+                        ★★★★★
+                        <p>12 reviews at Yelp</p>
+                    </div>
+                        
+
+                </div>
+
+            </div>
+
+            <button class="next">➜</button>
+
+        </div>
+
+    </section>
+
+
 
 <footer>
     <div class="footer_section">
-       <div class="top"> <div class="brand_footer">
-            <img src="footer_logo.png" alt="" class="logo" />
-            <span>Parent<b>Genius</b></span>
-            </div>
+       <div class="top"> 
+            <img src="/index_images/site_logo.png" class="logo" />
+            
             <hr>
-            <pre>Virtual Class
-    for Zoom
-            </pre>
+    <pre>      Virtual Class 
+for Zoom</pre>
         </div>
         <p id="line_three">Subscribe to get your Newsletter</p>
         <div id="subscription">
@@ -85,7 +966,9 @@
         <p id="line_four"> &copy 2025 ParentGenius</p>
 
     </div>
-</footer>
+    </footer>
 
-  </body>
+
+</body>
+
 </html>

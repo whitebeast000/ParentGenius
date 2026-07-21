@@ -1,0 +1,93 @@
+.resources
+{
+    margin: 50px;
+}
+.section2-card
+{
+    display: flex;
+    width: 320px;
+    gap: 10px;
+
+}
+
+.courses-section-2-content
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-bottom: 70px;
+}
+
+.section2-card-left img
+{
+    width: 120px;
+    height: 190px;
+}
+.price
+{
+    display: flex;
+    justify-content:flex-start;
+    gap: 14px;
+}
+
+.price span:nth-child(2)
+{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.section2-card-left
+{
+    width: 150px;
+    height: 180px;
+    padding: 5px;
+    padding-left: 0;
+}
+.section2-card-right
+{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px; */
+    text-align: left;
+    gap: 10px;
+
+}
+.section2-card-right h3
+{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.section2-card-right p
+{
+    font-size: 11px;
+    font-weight: 400;
+    color: gray;
+}
+
+.course-section2-btn 
+{
+    /* padding:  */
+    background-color: #42C08A;
+    font-size: 14px;
+    background-color: green;
+    border: none;
+    padding: 7px 9px;
+    border-radius: 18px;    
+    color: white;
+    width: 130px;
+    margin-top: 16px;
+
+}
+
+
+.section2-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: left;
+    margin-top: 70px;
+}

@@ -1,0 +1,327 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family: "DM Sans", sans-serif;
+    background:#fff;
+}
+
+.container{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:35px;
+    margin-bottom: 30px;
+}
+
+
+.brand
+{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-left: -80px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.logo
+{
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    position: relative;
+    top: -30px;
+}
+.brand span{
+
+    font-size:30px;
+}
+
+
+
+.progress-bar{
+    margin-top: -120px;
+    width:380px;
+    display:flex;
+    gap:8px;
+    margin-bottom:35px;
+}
+
+.line{
+
+    flex:1;
+    height:3px;
+    background:#E5E5E5;
+    border-radius:10px;
+}
+
+.line.active{
+
+    background:#55C271;
+}
+
+/* Heading */
+
+h2{
+
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* Profile */
+
+.profile{
+
+    margin-bottom:30px;
+}
+
+.profile img{
+
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+.scale-container{
+    text-align:center;
+    margin-top:40px;
+}
+
+.scale-bar{
+
+    position:relative;
+
+    width:280px;
+    height:65px;
+
+    margin:auto;
+
+    border-radius:18px;
+
+    background:#f4f4f4;
+
+    overflow:hidden;
+}
+
+.filled{
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:70%;
+    height:100%;
+
+    background:#58B061;
+}
+
+.ticks{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-evenly;
+
+    align-items:center;
+
+    z-index:2;
+}
+
+.ticks span{
+
+    width:4px;
+    height:35px;
+
+    background:white;
+
+    border-radius:5px;
+}
+
+.thumb{
+
+    position:absolute;
+
+    top:50%;
+
+    left:70%;
+
+    transform:translate(-50%,-50%);
+
+    width:65px;
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:#3F66F5;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    z-index:3;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+
+.btn{
+
+    display:block;
+    margin:30px auto 0;
+    width:180px;
+    height:48px;
+    border:none;
+    border-radius:25px;
+    background:#3B6EF6;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom: 100px;
+}
+
+
+
+
+footer
+{
+    width: 100%;
+    background-color: #315DEC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 16px;
+}
+
+.brand_footer   
+{   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    /* margin-left: -115px; */
+    /* margin-top: 20px;  */
+    font-size: 18;
+}
+
+.footer_section div img
+{
+
+    width: 80px;
+    object-fit: contain;
+    position: relative;
+    top: 5px;
+}
+.top
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+hr
+{
+    height: 40px;
+    border: 0.1px solid rgb(79, 79, 172);
+}
+
+#line_three
+{
+    text-align: center;
+}
+
+
+#subscription
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+#subscription input
+{
+    color: white;
+    background:none;
+    border: 0.01px solid white;
+    border-radius: 30px;
+    padding: 8px 20px;
+    min-width: 260px;
+
+}
+#subscription input::placeholder
+{
+    color: white;
+    background:none;
+}
+
+#subscription button
+{
+    color: white;
+    background:#55A65E;
+    border: none;   
+    border-radius: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+
+}
+.terms_and_policy
+{   
+    margin-top: 70px ;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.terms_and_policy hr
+{
+    height: 10px;
+}
+
+.terms_and_policy a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+#line_four
+{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}

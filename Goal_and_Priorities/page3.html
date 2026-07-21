@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="page3.js" defer></script>
+    <link rel="stylesheet" href="page3.css">
+    <title>Document</title>
+</head>
+<body>
+     
+    <!-- Logo -->
+    <div class="brand">
+        <img src="/login/logo.png" class="logo">
+        <span>Parent<b>Genius</b></span>
+    </div>
+    
+    <div class="container">
+        
+        <div class="progress-bar">
+            <div class="line active"></div>
+            <div class="line active"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <h2>List the ages of your children</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Child 1</legend>
+                <input type="text" id="ageInput">
+            </fieldset>
+        </form>
+         
+      
+            <div class="wheel-container" id="wheel">
+                <select size="5" id="ageSelect">
+                    <option selected onclick="setage()"></option>
+                           
+                </select>
+            </div>
+        
+            <button  type="button"  class="btn" onclick="window.location.href='page4.html'">Save & Next</button>
+
+
+
+        
+    
+<footer>
+    <div class="footer_section">
+       <div class="top"> <div class="brand_footer">
+            <img src="/login/footer_logo.png" alt="" class="logo" />
+            <span>Parent<b>Genius</b></span>
+            </div>
+            <hr>
+            <pre>Virtual Class
+    for Zoom
+            </pre>
+        </div>
+        <p id="line_three">Subscribe to get your Newsletter</p>
+        <div id="subscription">
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <button>Subscribe</button>
+        </div>
+
+
+        <div class="terms_and_policy">
+            <a href="">Careers</a>
+            <hr>
+            <a href="">Privacy Policy</a>
+            <hr>
+            <a href="">Terms & Conditions</a>
+        </div>
+
+        <p id="line_four"> &copy 2025 ParentGenius</p>
+
+    </div>
+    </footer>
+
+</body>
+</html>

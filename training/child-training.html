@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Child Training · ParentGenius</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="container">
+    <a href="parent-training.html" class="brand">
+           <img src="/index_images/colored_logo.png" alt="" width="200px">
+
+    </a>
+    <nav class="main-nav">
+      <ul>
+         <li onclick="window.location.href='../index.html'">Home</li>
+                    <li onclick="window.location.href='../Courses/course_page1.html'">Courses</li>
+                    <li onclick="window.location.href='../Resources/Resources_pg1.html'">Resources</li>
+                    <li onclick="window.location.href='../Therapy/Therapy.html'">Therapy</li>
+                    <li onclick="window.location.href='../Community/Community.html'">Community</li>
+                    <li onclick="window.location.href='../Challenge/Challenge.html'">Challenges</li>
+                    
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Notifications">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.7 21a2 2 0 0 1-3.4 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+     <div class="avatar-chip" onclick="window.location.href='../Profile/Settings/setting.html'">
+              <img src="/Profile/Image/profile1.jpg" alt="Uno">
+        <span>Uno</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1>Even a 10-minute play break can brighten your child's day.</h1>
+      <form class="hero-search">
+        <input type="text" placeholder="What do you want to fix today?" aria-label="Search">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="challenge-card">
+      <div class="challenge-info">
+        <span class="challenge-date">3 April, 2025</span>
+        <div class="challenge-title">30-Day Challenges</div>
+        <a href="#" class="challenge-btn">Continue Challenge</a>
+      </div>
+      <div class="progress-ring" data-progress="65">
+        <svg width="88" height="88" viewBox="0 0 88 88">
+          <circle class="ring-bg" cx="44" cy="44" r="38"></circle>
+          <circle class="ring-fill" cx="44" cy="44" r="38"></circle>
+        </svg>
+        <div class="ring-label">0%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Mode tabs ===== -->
+<nav class="mode-tabs">
+  <div class="container">
+    <a href="parent-training.html" class="mode-tab">
+      <img class="tab-icon" src="https://i.pravatar.cc/80?img=32" alt="">
+      <span>Parent Training</span>
+    </a>
+    <a href="child-training.html" class="mode-tab active">
+      <img class="tab-icon" src="https://i.pravatar.cc/80?img=14" alt="">
+      <span>Child Training</span>
+    </a>
+    <a href="tutorials-guidance.html" class="mode-tab video">
+      <span class="tab-icon">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7-11-7Z" fill="currentColor"/></svg>
+      </span>
+      <span>Tutorials Guidance</span>
+    </a>
+  </div>
+</nav>
+
+<main>
+  <!-- ===== Child Training activities ===== -->
+  <section class="section container">
+    <div class="section-head">
+      <h2>Child Training</h2>
+    </div>
+    <div class="activity-grid" id="activity-grid">
+      <!-- Cards are generated below by data + JS-friendly markup, written out explicitly for easy editing -->
+    </div>
+  </section>
+</main>
+
+
+
+<footer>
+    <div class="footer_section">
+       <div class="top"> 
+            <img src="/index_images/site_logo.png" class="logo" />
+            
+            <hr>
+    <pre>      Virtual Class 
+for Zoom</pre>
+        </div>
+        <p id="line_three">Subscribe to get your Newsletter</p>
+        <div id="subscription">
+            <input type="email" name="email" placeholder="Enter Your Email">
+            <button>Subscribe</button>
+        </div>
+
+
+        <div class="terms_and_policy">
+            <a href="">Careers</a>
+            <hr>
+            <a href="">Privacy Policy</a>
+            <hr>
+            <a href="">Terms & Conditions</a>
+        </div>
+
+        <p id="line_four"> &copy 2025 ParentGenius</p>
+
+    </div>
+    </footer>
+
+
+<script src="script.js"></script>
+<script>
+  // Activity data — edit this array to add/remove/update cards.
+  const activities = [
+    { img: 'https://images.unsplash.com/photo-1543342384-1f1350e27861?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Simple daily habits that build empathy and patience.', views: '234,231' },
+    { img: 'https://images.unsplash.com/photo-1476703993599-0035a21b17a9?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Turning chores into confidence-building games.', views: '198,120' },
+    { img: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Fun ways to teach honesty through storytelling.', views: '312,405' },
+    { img: 'https://images.unsplash.com/photo-1491013516836-7db643ee125a?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Building resilience through small daily wins.', views: '289,762' },
+    { img: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Sharing exercises that reduce sibling rivalry.', views: '176,884' },
+    { img: 'https://images.unsplash.com/photo-1560785496-3c9d27877182?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Teamwork games for cooperative play skills.', views: '221,509' },
+    { img: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Emotional vocabulary building for toddlers.', views: '303,047' },
+    { img: 'https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Respectful listening habits for family time.', views: '267,930' },
+    { img: 'https://images.unsplash.com/photo-1491013516836-7db643ee125a?q=80&w=500&auto=format&fit=crop', title: 'Age-appropriate character building activities', desc: 'Building resilience through small daily wins.', views: '289,762' },
+  ];
+
+  const grid = document.getElementById('activity-grid');
+  grid.innerHTML = activities.map(a => `
+    <article class="activity-card">
+      <div class="activity-cover" style="background-image:url('${a.img}')"></div>
+      <div class="activity-body">
+        <span class="activity-tag"><span class="dot"></span>Character Building</span>
+        <h3>${a.title}</h3>
+        <p>${a.desc}</p>
+        <div class="activity-foot">
+          <a href="#" class="read-more">Read more</a>
+          <span class="view-count">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/></svg>
+            ${a.views}
+          </span>
+        </div>
+      </div>
+    </article>
+  `).join('');
+</script>
+</body>
+</html>

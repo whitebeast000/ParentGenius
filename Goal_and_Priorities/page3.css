@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family: "DM Sans", sans-serif;
+    background:#fff;
+}
+
+.container{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:35px;
+    margin-bottom: 30px;
+}
+
+
+.brand
+{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    margin-left: -80px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.logo
+{
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    position: relative;
+    top: -30px;
+}
+.brand span{
+
+    font-size:30px;
+}
+
+
+
+.progress-bar{
+    margin-top: -120px;
+    width:380px;
+    display:flex;
+    gap:8px;
+    margin-bottom:35px;
+}
+
+.line{
+
+    flex:1;
+    height:3px;
+    background:#E5E5E5;
+    border-radius:10px;
+}
+
+.line.active{
+
+    background:#55C271;
+}
+
+/* Heading */
+
+
+h2{
+
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+form{
+
+    width:130px;
+}
+
+fieldset{
+
+    border:1.5px solid #3B6EF6;
+    border-radius:8px;
+    margin-bottom:18px;
+    padding:8px 16px 12px;
+}
+
+legend{
+
+    color:#6E6E6E;
+    font-size:13px;
+    padding:0 6px;
+}
+
+input{
+
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:18px;
+    font-family:inherit;
+    background:none;
+}
+
+select{
+
+    cursor:pointer;
+}
+
+
+
+.wheel-container{
+    position:relative;
+    width:120px;
+    height:180px;
+    overflow:hidden;
+    margin:20px auto;
+}
+
+.wheel-container::before,
+.wheel-container::after{
+    content:"";
+    position:absolute;
+    left:0;
+    width:100%;
+    height:45px;
+    z-index:5;
+}
+
+.wheel-container::before{
+    top:0;
+    background:linear-gradient(white,transparent);
+}
+
+.wheel-container::after{
+    bottom:0;
+    background:linear-gradient(transparent,white);
+}
+
+.wheel-container select{
+
+    width:100%;
+    height:100%;
+    border:none;
+    outline:none;
+    background: white;
+    color:black;
+    text-align:center;
+    font-size:30px;
+    overflow-y:auto;
+}
+
+.wheel-container option{
+
+    height:56px;
+    background: lightblue;
+    text-align: center;
+    padding:5px;
+}
+
+
+
+
+.btn{
+
+    display:block;
+    margin:30px auto 0;
+    width:180px;
+    height:48px;
+    border:none;
+    border-radius:25px;
+    background:#3B6EF6;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+footer
+{
+    width: 100%;
+    background-color: #315DEC;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 16px;
+}
+
+.brand_footer   
+{   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    
+    /* margin-left: -115px; */
+    /* margin-top: 20px;  */
+    font-size: 18;
+}
+
+.footer_section div img
+{
+
+    width: 80px;
+    object-fit: contain;
+    position: relative;
+    top: 5px;
+}
+.top
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+hr
+{
+    height: 40px;
+    border: 0.1px solid rgb(79, 79, 172);
+}
+
+#line_three
+{
+    text-align: center;
+}
+
+
+#subscription
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+#subscription input
+{
+    color: white;
+    background:none;
+    border: 0.01px solid white;
+    border-radius: 30px;
+    padding: 8px 20px;
+    min-width: 260px;
+
+}
+#subscription input::placeholder
+{
+    color: white;
+    background:none;
+}
+
+#subscription button
+{
+    color: white;
+    background:#55A65E;
+    border: none;   
+    border-radius: 30px;
+    padding: 8px 20px;
+    cursor: pointer;
+
+}
+.terms_and_policy
+{   
+    margin-top: 70px ;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.terms_and_policy hr
+{
+    height: 10px;
+}
+
+.terms_and_policy a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+#line_four
+{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
