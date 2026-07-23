@@ -10,6 +10,18 @@ body{
     background:#fff;
 }
 
+/* Prevent horizontal scrolling and ensure images don't overflow */
+html, body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
 .container{
 
     width:100%;
@@ -74,7 +86,6 @@ h2{
     margin-bottom:60px;
 }
 
-/* Profile */
 
 .profile{
 
@@ -89,7 +100,6 @@ h2{
     object-fit:cover;
 }
 
-/* Form */
 
 form{
 
@@ -168,6 +178,12 @@ footer
     align-items: center;
     width: 100%;
     padding: 20px 16px;
+}
+
+/* Allow preformatted footer text to wrap on small screens */
+.footer_section pre{
+    white-space: normal;
+    text-align: center;
 }
 
 .brand_footer   
@@ -272,4 +288,92 @@ hr
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+}
+
+/* Responsive rules (mobile-first) */
+
+/* Make containers and form fluid with a max width */
+.container{
+    padding-left:16px;
+    padding-right:16px;
+}
+
+form{
+    width:100%;
+    max-width:730px;
+    padding:0 8px;
+}
+
+/* Progress bar adapt */
+.progress-bar{
+    width:90%;
+    max-width:380px;
+    margin-top: -40px;
+}
+
+.brand{
+    margin-left:0;
+    justify-content:center;
+    gap:12px;
+}
+
+.logo{
+    width:100px;
+    height:100px;
+    top:0;
+}
+
+.profile img{
+    width:80px;
+    height:80px;
+}
+
+/* Footer stacks on small screens */
+footer{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:10px;
+}
+
+.footer_section{
+    width:100%;
+    padding:16px;
+}
+
+/* Small tweaks for subscription input */
+#subscription input{min-width:180px;}
+
+/* Tablet and up */
+@media (min-width: 768px) {
+    .brand{
+        justify-content: left;
+        margin-left: -80px;
+        margin-top: 40px;
+    }
+    .logo{
+        width:145px;
+        height:145px;
+        top:-30px;
+    }
+    .progress-bar{
+        margin-top: -120px;
+        width:380px;
+        gap:8px;
+    }
+    footer{
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items:stretch;
+    }
+    .footer_section{
+        width: auto;
+        padding:20px 16px;
+    }
+}
+
+/* Desktop wide screens */
+@media (min-width: 1024px){
+    .container{padding-top:35px;}
+    h2{font-size:36px;}
 }

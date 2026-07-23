@@ -378,7 +378,7 @@ hr
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
+        gap:z 10px;
     }
 }
 

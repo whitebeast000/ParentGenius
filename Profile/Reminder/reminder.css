@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 body{  font-family: "Poppins", sans-serif; 
 box-sizing: border-box;}
@@ -120,8 +121,8 @@ header
 .hero
 {
     justify-content: center ;
-        margin-bottom: 720px;
-
+    margin-bottom: 3rem;
+    padding: 0 1rem;
 }
 
 .hero_content
@@ -157,25 +158,27 @@ header
 
 #reminders
 {
-    width: 72%;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 .reminder-cards
 {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
-
 }
 
 .reminder-card
-{   width: 48%;
+{   width: 100%;
     display: flex;
     text-align: left;
     flex-direction: row;
     align-items: center;
     background-color: #FFFFFF;
     border-radius: 10px;
+    padding: 1rem;
 
 }
 .reminder-content h3
@@ -360,6 +363,84 @@ footer
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .main-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 24px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .nav-profile {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .reminder-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero_content {
+        margin-top: 40px;
+        padding: 0 16px;
+    }
+
+    .hero_content p {
+        font-size: 1rem;
+    }
+
+    .reminder-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .toggle-switch {
+        align-self: flex-end;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    #subscription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #subscription input,
+    #subscription button {
+        width: 100%;
+    }
+
+    .terms_and_policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+    }
 }
 
 

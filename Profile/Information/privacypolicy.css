@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 body{  font-family: "Poppins", sans-serif; 
 box-sizing: border-box;}
@@ -48,9 +49,7 @@ header
 {
     position: relative;
     overflow: hidden;
-    height: 400px;
-
-  
+    min-height: 400px;
 }
 
 .main-navbar{
@@ -60,6 +59,7 @@ header
     padding:20px 60px;
     background:white;
     gap:20px;
+    flex-wrap:wrap;
 }
 
 .nav-logo{
@@ -121,12 +121,13 @@ header
 
 
 .hero_content{
-    height: 320px;   /* Adjust as needed */
+    min-height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
+    padding: 2rem 1rem;
 }
 
 
@@ -142,21 +143,22 @@ header
 
 #privacy-terms
 {
-    margin: 50px;
+    margin: 50px 24px;
 }
 
 #privacy-terms h3
 {
-font-size: 32px;
+font-size: clamp(1.5rem, 2.5vw, 2rem);
 font-weight: 700;
 }
 
 #privacy-terms pre
 {
-    font-size: 26px;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     font-family: sans-serif;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.6;
+    white-space: pre-wrap;
     
 }
 
@@ -282,6 +284,69 @@ footer
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .main-navbar {
+        justify-content: center;
+        padding: 20px 24px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .nav-profile {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero_content {
+        min-height: 240px;
+        padding: 1rem;
+    }
+
+    #privacy-terms {
+        margin: 24px 16px;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    #subscription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #subscription input,
+    #subscription button {
+        width: 100%;
+    }
+
+    .terms_and_policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+    }
 }
 
 

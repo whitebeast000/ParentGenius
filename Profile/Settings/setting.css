@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 body{  font-family: "Poppins", sans-serif; 
 box-sizing: border-box;}
@@ -162,21 +163,20 @@ header
 
 #main-content
 {
-    margin: 80px;
+    margin: 80px 24px;
 }
 #main-content-cards
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
+    align-items: stretch;
 }
 
 .main-content-card
 {
-    width: 23.5%;
-    border: 2px solid #F2F2F2;
+    width: 100%;
+    border: 2px solid #f0eeee;
     border-radius: 10px;
     padding: 15px;
 }
@@ -326,6 +326,82 @@ footer
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .main-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 24px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .nav-profile {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #main-content-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .main-navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero_content {
+        margin-top: 40px;
+        padding: 0 16px;
+    }
+
+    .hero_content img {
+        width: min(120px, 40%);
+    }
+
+    #main-content {
+        margin: 40px 16px;
+    }
+
+    #main-content-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    #subscription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #subscription input,
+    #subscription button {
+        width: 100%;
+    }
+
+    .terms_and_policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+    }
 }
 
 

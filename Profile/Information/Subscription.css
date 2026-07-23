@@ -3,9 +3,11 @@
 *{
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 body{  font-family: "Poppins", sans-serif; 
-box-sizing: border-box;}
+box-sizing: border-box;
+overflow-x: hidden;}
 
 #bg_img{
     position: absolute;
@@ -48,9 +50,7 @@ header
 {
     position: relative;
     overflow: hidden;
-    height: 400px;
-
-  
+    min-height: 400px;
 }
 
 .main-navbar{
@@ -60,6 +60,7 @@ header
     padding:20px 60px;
     background:white;
     gap:20px;
+    flex-wrap:wrap;
 }
 
 .nav-logo{
@@ -121,7 +122,7 @@ header
 
 
 .hero_content{
-    height: 320px;   /* Adjust as needed */
+    min-height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,29 +130,25 @@ header
     text-align: left;
     gap: 20px;
     flex-direction: column;
+    padding: 1rem;
 }
 .hero_content h3
 {
-width: 40%;
-}
-.hero_content h3:first-child
-{
-
-    text-align: center;
+width: min(100%, 500px);
+text-align: center;
 }
 
 #Subscription-main
 {
-    margin: 50px 100px;
+    margin: 50px 24px;
 }
 
 
 #Subscription-cards
 {
-    display: flex;
-    gap: 30px;
-    justify-content: left;
-    
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
 .Subscription-card
 {   width: 100%;
@@ -241,6 +238,7 @@ border-radius: 100%;
     width: 70%;
     padding: 8px 10px;
     margin: 0 auto;
+    
 } 
 .subscription-card2-btn 
 {
@@ -412,7 +410,28 @@ input[type="radio"]{
     height:18px;
 }
 
-@media(max-width:768px){
+@media(max-width:900px){
+    .main-navbar{
+        justify-content:center;
+        padding:20px 24px;
+    }
+
+    .nav-links{
+        order:3;
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:12px 20px;
+    }
+
+    .nav-profile{
+        justify-content:center;
+        width:100%;
+    }
+
+    #Subscription-cards{
+        grid-template-columns:1fr 1fr;
+    }
 
     .payment-container{
         flex-direction:column;
@@ -424,6 +443,99 @@ input[type="radio"]{
 
     .row{
         grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+    .main-navbar{
+        padding:16px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .hero_content{
+        min-height: 240px;
+        padding: 1rem;
+    }
+
+    .hero_content h3{
+        font-size: 1rem;
+    }
+
+    #Subscription-main{
+        margin: 24px 16px;
+    }
+
+    #Subscription-cards{
+        grid-template-columns:1fr;
+    }
+
+    .Subscription-card-content{
+        height:auto;
+        padding:20px;
+    }
+
+    .sub-card-top,
+    #card-2-payment{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .subscription-card2-btn,
+    .subscription-card3-btn,
+    .pay-btn{
+        width:100%;
+        padding: 10px 12px;
+    }
+
+    .payment-option{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .payment-right{
+        width:100%;
+        padding-top:16px;
+    }
+
+    .popup{
+        width: min(92vw, 500px);
+    }
+
+    .pop_head{
+        width: 100%;
+    }
+
+    .content_txt{
+        margin: 0 20px;
+    }
+
+    .top{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    #subscription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #subscription input,
+    #subscription button {
+        width: 100%;
+    }
+
+    .terms_and_policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
     }
 }
 

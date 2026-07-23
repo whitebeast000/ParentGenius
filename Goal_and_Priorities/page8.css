@@ -21,6 +21,33 @@ body{
 }
 
 
+.container h2{
+width: 80%;
+margin: 0 auto;
+float: left;
+
+}
+
+@media (max-width:540px) {
+       
+    .container h2{
+          font-size: 30px;
+    }
+}
+
+@media (max-width:450px) {
+    .container h2{
+          font-size: 30px;
+    }   
+}
+
+@media (max-width:340px) {
+    .container h2{
+          font-size: 22px;
+    }
+}
+
+
 .brand
 {
     display: flex;
@@ -324,4 +351,29 @@ hr
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+}
+
+
+
+@media (max-width:450px){
+    footer{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        padding:12px 10px;
+        gap:12px;
+    }
+    .footer_section{
+        width:100%;
+        padding:12px 0px;
+        overflow-x: hidden;
+    }
+    .brand_footer{gap:8px}
+    .brand_footer img{width:60px;height:auto}
+    .top{flex-direction:column;gap:8px}
+    #subscription{flex-direction:column;gap:8px}
+    #subscription input{min-width:140px;width:100%;max-width:340px}
+    #subscription button{width:100%;max-width:200px}
+    .terms_and_policy{flex-direction:column;gap:8px;margin-top:12px}
+    hr{display:none}
 }

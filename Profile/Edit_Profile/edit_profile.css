@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 body{  font-family: "Poppins", sans-serif; 
 box-sizing: border-box;}
@@ -143,17 +144,25 @@ header
 }
 #Edit-profile-form
 {
- width: 80%;
-  margin: 0 auto;
+    width: min(100%, 900px);
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
+
+#Edit-profile-form form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
 #Edit-profile-form input
 {
-    width: 40%;
+    width: 100%;
     padding: 10px;
     border-radius: 12px;
-    margin: 10px;
     border: 1px solid #315DEC;
 }
 #Edit-profile-form input:focus-within
@@ -206,6 +215,7 @@ footer
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding: 0 16px;
 }
 
 .footer_section
@@ -313,6 +323,79 @@ footer
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+}
+
+@media (max-width: 900px) {
+    .main-navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 24px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .nav-profile {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero_content {
+        margin-top: 40px;
+        padding: 0 16px;
+    }
+
+    .hero_content img {
+        width: min(140px, 40%);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-navbar {
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero_content h3,
+    .hero_content p {
+        font-size: 1rem;
+    }
+
+    #Edit-profile-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .top {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    #subscription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #subscription input,
+    #subscription button {
+        width: 100%;
+    }
+
+    .terms_and_policy {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+    }
 }
 
 
