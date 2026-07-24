@@ -121,7 +121,7 @@ header
 
 .hero
 {
-    justify-content: center ;
+    justify-content: left ;
 }
 
 .hero_content
@@ -149,3 +149,330 @@ header
     padding: 2px;
     font-weight: 1px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablets */
+@media (max-width:992px){
+
+    .main-navbar{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav-logo,
+    .nav-profile{
+        flex:none;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .hero_content{
+        margin-top:50px;
+    }
+
+    .hero_content h1{
+        width:90%;
+        font-size:28px;
+    }
+
+    .tip-card{
+        width:90%;
+        padding:15px;
+    }
+
+    .tip-text .heading{
+        font-size:15px;
+    }
+
+    .tip-text .sub-heading{
+        font-size:16px;
+    }
+
+    .Expert-courses{
+        margin:25px;
+    }
+
+    .Expert-courses h3{
+        text-align:center;
+    }
+
+    .courses-cards{
+        justify-content:center;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    .main-navbar{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-profile{
+        justify-content:center;
+    }
+
+    .hero_content{
+        margin-top:35px;
+        gap:20px;
+    }
+
+    .hero_content h3{
+        font-size:20px;
+    }
+
+    .hero_content h1{
+        font-size:32px;
+        width:80%;
+    }
+
+    .tip-card{
+        width:95%;
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    .tip-text .heading,
+    .tip-text .sub-heading{
+        text-align:center;
+    }
+
+   .Expert-courses{
+        margin:20px;
+        
+    }
+
+    .courses-cards{
+        justify-content:center;
+    }
+
+    .course-card{
+        width:100%;
+        max-width:380px;
+        height:280px;
+    }
+
+    .course-card img{
+        width:100%;
+        height:100%;
+    }
+
+    .course-card-content{
+        left:20px;
+        right:20px;
+        bottom:20px;
+    }
+
+    .course-card-content h2{
+        font-size:22px;
+    }
+
+    .course-card-content p{
+        width:100%;
+        font-size:14px;
+    }
+
+    .course-upgrade-btn{
+        width:100%;
+        padding:12px;
+    }
+
+    footer{
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+    }
+
+    .top{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .top hr{
+        display:none;
+    }
+
+    #subscription{
+        flex-direction:column;
+    }
+
+    #subscription input{
+        min-width:100%;
+        width:100%;
+    }
+
+    #subscription button{
+        width:100%;
+    }
+
+    .terms_and_policy{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .terms_and_policy hr{
+        display:none;
+    }
+
+}
+
+
+/* Small Mobile */
+@media (max-width:480px){
+
+
+ .main-navbar{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-profile{
+        justify-content:center;
+    }
+
+
+    .main-navbar{
+        padding:15px;
+    }
+
+    .nav-logo img{
+        width:160px;
+    }
+
+    .hero_content h3{
+        font-size:18px;
+    }
+
+    .hero_content h1{
+        font-size:26px;
+        width: 80%;
+    }
+
+    .tip-icon{
+        width:60px;
+        height:60px;
+    }
+
+    .tip-icon i{
+        font-size:30px;
+    }
+
+    .course-card{
+        height:250px;
+    }
+
+    .course-card-top{
+        top:15px;
+        left:15px;
+        right:15px;
+    }
+
+    .top-rating-btn{
+        padding:6px 16px;
+        font-size:14px;
+    }
+
+    .course-card-content h2{
+        font-size:20px;
+    }
+
+    .course-card-content p{
+        font-size:13px;
+    }
+
+}
+
+@media (max-width:350px) {
+    header {
+        min-height: auto;
+        height: auto;
+    }
+    .main-navbar
+    {
+        padding: 10px 25px;
+        align-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .hero-wrapper {
+        position: relative;
+        display: block;
+        min-height: auto;
+        margin-top: 0;
+    }
+
+    .hero-bg,
+    .hero-overlay {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: block;
+        top: auto;
+        left: auto;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 16px 0 24px;
+        display: block;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+    .hero_content {
+        position: relative;
+        margin: -220px auto 0;
+        padding: 18px 14px;
+        width: 80%;
+        max-width: 80%;
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 18px;
+        z-index: 3;
+    }
+
+    .hero_content h1 {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .hero_content p {
+        font-size: 12px;
+        width: 100%;
+        line-height: 1.45;
+    }
+}
+

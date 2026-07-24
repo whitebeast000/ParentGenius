@@ -1,3 +1,458 @@
+/* HEADER */
+
+
+
+
+
+body
+{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+
+/* HEADER */
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{  font-family: "Poppins", sans-serif; 
+box-sizing: border-box;}
+
+#bg_img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.15;
+    z-index: 1000;
+}
+
+.main-navbar,
+.hero{
+    position: relative;
+    z-index: 4;
+}
+
+.main-navbar
+{
+    background-color: white;
+}
+.hero-bg{
+    position: absolute;
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+    z-index: 1;
+}
+
+.hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #797d8c;
+    opacity: 0.75;
+
+    z-index: 2;
+}
+
+
+header{
+    min-height:550px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-bg,
+.hero-overlay{
+    height:100%;
+}
+
+.main-navbar
+{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 45px;
+    flex-wrap:wrap ;
+    justify-content: center;
+  
+    align-items: center;
+}
+.nav-links li
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+}
+.nav-links li:active
+{
+    color: #315DEC;
+}
+
+.image
+{   width: 30px;
+    background-color: rgb(85, 141, 85);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.image img
+{
+    padding: 5px;
+}
+
+#login, #signup
+{
+    width: 100px;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+}
+
+#signup
+{
+    color: white;
+    background-color: #5976d5;
+    margin-left: 20px;
+}
+
+
+.hero
+{
+    justify-content: left ;
+}
+
+.hero_content
+{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+.hero_content h1
+{
+    font-size: 30px;
+    width: 50%;
+}
+.hero_content p
+{
+    width: 50%;
+    font-style: oblique;
+    font-size: 20px;
+    border: 0.1px solid #8ca3f1 ;
+    padding: 2px;
+    font-weight: 1px;
+}
+
+
+
+
+
+
+
+
+
+/* Small Mobile */
+@media (max-width:480px){
+
+
+ .main-navbar{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-profile{
+        justify-content:center;
+    }
+
+
+    .main-navbar{
+        padding:15px;
+    }
+
+    .nav-logo img{
+        width:160px;
+    }
+
+    .hero_content h3{
+        font-size:18px;
+    }
+
+    .hero_content h1{
+        font-size:26px;
+        width: 80%;
+    }
+
+
+}
+
+/*  */
+
+
+
+
+
+
+
+
+/* Tablets */
+@media (max-width:992px){
+
+    .main-navbar{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav-logo,
+    .nav-profile{
+        flex:none;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .hero_content{
+        margin-top:50px;
+    }
+
+    .hero_content h1{
+        width:90%;
+        font-size:28px;
+    }
+
+    .tip-card{
+        width:90%;
+        padding:15px;
+    }
+
+    .tip-text .heading{
+        font-size:15px;
+    }
+
+    .tip-text .sub-heading{
+        font-size:16px;
+    }
+
+    .Expert-courses{
+        margin:25px;
+    }
+
+    .Expert-courses h3{
+        text-align:center;
+    }
+
+    .courses-cards{
+        justify-content:center;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width:750px){
+
+
+.main-navbar{
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap:15px;
+}
+
+.nav-links{
+    flex-direction:column;
+    gap:12px;
+}
+
+.avatar-chip{
+    margin-top:10px;
+}
+
+    .main-navbar > div {
+        width:100%;
+    }
+
+    .main-navbar .logo {
+        margin-bottom: 12px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .main-navbar .logo img {
+        width: 160px;
+        max-width: 100%;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+        width:100%;
+        align-items:center;
+        padding: 0;
+    }
+
+    .nav-links li{
+        font-size:16px;
+   
+        display:block;
+    }
+
+    .nav-profile{
+        justify-content:center;
+        width:100%;
+    }
+
+    .hero_content{
+        margin-top:30px;
+        gap:18px;
+        width:100%;
+    }
+
+    .hero_content h3{
+        font-size:20px;
+    }
+
+    .hero_content h1{
+        font-size:32px;
+        width:90%;
+        max-width:560px;
+    }
+
+    .hero_content p{
+        width:92%;
+        font-size:18px;
+        padding:0 4px;
+    }
+
+    .tip-card{
+        width:95%;
+        flex-direction:column;
+        text-align:center;
+        padding:20px;
+    }
+
+    .tip-text .heading,
+    .tip-text .sub-heading{
+        text-align:center;
+    }
+
+   .Expert-courses{
+        margin:20px;
+        
+    }
+
+    .courses-cards{
+        justify-content:center;
+    }
+
+    .course-card{
+        width:100%;
+        max-width:380px;
+        height:280px;
+    }
+
+    .course-card img{
+        width:100%;
+        height:100%;
+    }
+
+    .course-card-content{
+        left:20px;
+        right:20px;
+        bottom:20px;
+    }
+
+    .course-card-content h2{
+        font-size:22px;
+    }
+
+    .course-card-content p{
+        width:100%;
+        font-size:14px;
+    }
+
+    .course-upgrade-btn{
+        width:100%;
+        padding:12px;
+    }
+
+    footer{
+        flex-direction:column;
+        padding:20px;
+        text-align:center;
+    }
+
+    .top{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .top hr{
+        display:none;
+    }
+
+    #subscription{
+        flex-direction:column;
+    }
+
+    #subscription input{
+        min-width:100%;
+        width:100%;
+    }
+
+    #subscription button{
+        width:100%;
+    }
+
+    .terms_and_policy{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .terms_and_policy hr{
+        display:none;
+    }
+
+}
+
+
+
+
+
+
 .challenge-banner{
 
     width:90%;
@@ -157,9 +612,7 @@
     flex:1;
 }
 
-/* ===========================
-      Calendar Container
-=========================== */
+
 
 .calendar-container{
     background:#F5F7FF;
@@ -175,7 +628,7 @@
     align-items:center;
 }
 
-/* Days */
+
 
 .calendar-days{
     display:flex;
@@ -651,4 +1104,259 @@
 .streak-dot.active{
 
     background:#FFF3D0;
+}
+
+@media (max-width: 1200px) {
+    .challenge-banner {
+        width: auto;
+        margin: -55px 15px 30px;
+        min-height: 180px;
+    }
+
+    .challenge-content {
+        padding: 24px 18px;
+         flex-direction: column;
+        align-items: stretch;
+      
+        gap: 18px;
+        
+    }
+
+    .challenge-left h2 {
+        font-size: 32px;
+    }
+
+    .badge {
+        padding: 8px 14px;
+    }
+
+    .badge h4 {
+        font-size: 20px;
+    }
+
+    .badge p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 750px) {
+    .challenge-banner {
+        margin: -35px 12px 25px;
+        min-height: auto;
+    }
+
+    .challenge-content {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 16px;
+        gap: 18px;
+    }
+
+    .challenge-left h2 {
+        font-size: 28px;
+    }
+
+    .challenge-progress {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .badge {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 16px;
+    }
+
+    .badge h4 {
+        font-size: 18px;
+    }
+
+    .badge p {
+        font-size: 10px;
+    }
+
+    .calendar-days {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .challenge-calender-content {
+        gap: 20px;
+    }
+
+    .daily-challenge-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .daily-challenge-left {
+        gap: 12px;
+    }
+
+    .daily-challenge-left img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .daily-challenge-content h4 {
+        font-size: 18px;
+    }
+
+    .daily-challenge-content h3 {
+        font-size: 24px;
+    }
+
+    .daily-start-btn {
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .challenge-banner {
+        margin: -25px 10px 20px;
+    }
+
+    .challenge-content {
+        padding: 18px 14px;
+    }
+
+    .challenge-left h2 {
+        font-size: 24px;
+    }
+
+    .challenge-progress {
+        font-size: 16px;
+    }
+
+    .badge {
+        gap: 8px;
+    }
+
+    .streak-summary-card {
+        padding: 20px;
+    }
+
+    .streak-count h1 {
+        font-size: 72px;
+    }
+
+    .streak-count h3 {
+        font-size: 28px;
+    }
+
+    .streak-count p {
+        font-size: 18px;
+    }
+
+    .streak-fire-icon {
+        font-size: 70px;
+    }
+
+    .streak-week-header {
+        font-size: 16px;
+    }
+
+    .streak-grid {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .challenge-banner {
+        margin: -18px 8px 18px;
+    }
+
+    .challenge-content {
+        padding: 16px 12px;
+    }
+
+    .challenge-left h2 {
+        font-size: 22px;
+    }
+
+    .challenge-progress {
+        font-size: 15px;
+    }
+
+    .badge {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .calendar-top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .date {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .day p {
+        font-size: 12px;
+    }
+
+    .streak-count h1 {
+        font-size: 60px;
+    }
+
+    .streak-fire-icon {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 350px) {
+    .challenge-banner {
+        margin: -10px 6px 15px;
+        border-radius: 20px;
+    }
+
+    .challenge-content {
+        padding: 14px 10px;
+    }
+
+    .challenge-left h2 {
+        font-size: 20px;
+    }
+
+    .progress-container {
+        height: 18px;
+    }
+
+    .challenge-progress {
+        font-size: 14px;
+    }
+
+    .date {
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+    }
+
+    .streak-count h1 {
+        font-size: 52px;
+    }
+
+    .streak-count h3 {
+        font-size: 24px;
+    }
+
+    .daily-challenge-content h3 {
+        font-size: 22px;
+    }
+
+    .daily-start-btn {
+        padding: 12px;
+        font-size: 16px;
+    }
 }

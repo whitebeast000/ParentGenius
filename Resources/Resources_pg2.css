@@ -209,3 +209,178 @@ font-size: 16px;
 {
     text-align: left;
 }
+
+@media (max-width: 1200px) {
+    #upper-section {
+        margin: 20px 30px;
+        gap: 8px;
+    }
+
+    .upper-section-right .section-right-img {
+        height: 560px;
+    }
+
+    .section-right-img img:first-child {
+        width: 72%;
+    }
+}
+
+@media (max-width: 900px) {
+    #upper-section {
+        flex-direction: column;
+        margin: 24px 20px;
+
+    }
+
+    .upper-section-left,
+    .upper-section-right {
+        width: 100%;
+        margin: 100px 0px;
+    }
+
+    .upper-section-left {
+        margin-top: 30px;
+    }
+
+    .upper-section-left h1 {
+        font-size: 28px;
+    }
+
+    .upper-section-right {
+        margin-top: 20px;
+    }
+
+    .section-right-img {
+        width: 100%;
+        height: 630px;
+        margin-bottom: 0;
+    }
+
+    .section-right-img img:first-child {
+        width: 70%;
+       height: 90%;
+       top: 120px;
+    }
+    .section-right-img img:nth-child(2) {
+        /* width: 70%; */
+       height: 630px;
+    }
+
+    #sec-buttons {
+        flex-direction: row;
+        align-items: stretch;
+        margin-top: 150px;
+        justify-content: space-between;
+    }
+
+    .section-right-btn {
+        width: 45%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 12px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .nav-links li {
+        font-size: 16px;
+
+    }
+
+    .avatar-chip {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 12px;
+    }
+
+    #upper-section {
+        margin: 18px 14px;
+    }
+
+    .upper-section-left h1 {
+        font-size: 26px;
+    }
+
+    .Overview h3 {
+        font-size: 24px;
+    }
+
+    .section-right-img {
+        height: 420px;
+    }
+
+    .section-right-btn {
+        padding: 12px 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    #upper-section {
+        margin: 14px 10px;
+        gap: 12px;
+    }
+
+    .upper-section-left h1 {
+        font-size: 24px;
+    }
+
+    .upper-section-left p,
+    .sec-statement-2,
+    .section1-txt {
+        font-size: 16px;
+    }
+
+    .Overview h3 {
+        font-size: 22px;
+    }
+
+    .section-right-img {
+        height: 360px;
+    }
+
+    .section-right-img img:first-child {
+        width: 100%;
+    }
+
+    #sec-buttons {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    #upper-section {
+        margin: 12px 8px;
+    }
+
+    .nav-links li {
+        font-size: 14px;
+    }
+
+    .upper-section-left h1 {
+        font-size: 20px;
+    }
+
+    .Overview h3 {
+        font-size: 20px;
+    }
+
+    .section-right-img {
+        height: 300px;
+    }
+
+    .section-right-btn {
+        padding: 10px 12px;
+    }
+}
