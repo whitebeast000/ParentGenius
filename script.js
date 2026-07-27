@@ -21,9 +21,4 @@ document.querySelector('#unhide-courses-2').addEventListener('click',
     }
  );
 
-                <p style="color:blue;"><i class="bi bi-people-fill text-primary" style="font-size: 2rem;"></i>
-Corporate</p>
-
-
-
-
+           

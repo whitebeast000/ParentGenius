@@ -22,3 +22,17 @@ document.querySelector('#end').addEventListener
             window.location.reload();
         }
 );
+
+
+
+const feedbackTxt = document.getElementById("feedback-txt");
+const charCount = document.getElementById("char-count");
+
+const maxChars = 250;
+
+feedbackTxt.addEventListener("input", function () {
+    const remaining = maxChars - this.value.length;
+
+    charCount.textContent =
+        `${remaining} ${remaining === 1 ? "Character" : "Characters"} Remaining`;
+});

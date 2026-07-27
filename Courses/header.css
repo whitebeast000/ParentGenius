@@ -25,7 +25,7 @@ box-sizing: border-box;}
 {
     background-color: white;
 }
-.hero-bg{
+.hero-bg ,.hero-bg-video{
     position: absolute;
  
     width: 100%;
@@ -53,6 +53,7 @@ header
 
 }
 
+
 .main-navbar
 {
     padding: 25px;
@@ -61,11 +62,14 @@ header
     justify-content: space-between;
 
 }
-.main-navbar .logo video
-{
-    object-fit: contain;
-    z-index: -1000;
-    position: absolute;
+.hero-bg-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center (50%);
+    z-index:0;
 }
 .nav-links
 {
@@ -150,11 +154,19 @@ header
     font-weight: 1px;
 }
 
+.avatar-chip{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
 
-
-
-
-
+.avatar-chip img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    flex-shrink:0;
+    object-fit:cover;
+}
 
 
 
@@ -371,9 +383,14 @@ header
     .nav-logo img{
         width:160px;
     }
-
+    
+    .hero_content
+    {
+        margin-bottom: 30px;
+    }
     .hero_content h3{
-        font-size:18px;
+        font-size:18px; 
+    
     }
 
     .hero_content h1{
@@ -414,65 +431,3 @@ header
     }
 
 }
-
-@media (max-width:350px) {
-    header {
-        min-height: auto;
-        height: auto;
-    }
-    .main-navbar
-    {
-        padding: 10px 25px;
-        align-content: flex-start;
-        margin-bottom: 20px;
-    }
-
-    .hero-wrapper {
-        position: relative;
-        display: block;
-        min-height: auto;
-        margin-top: 0;
-    }
-
-    .hero-bg,
-    .hero-overlay {
-        position: static;
-        width: 100%;
-        height: auto;
-        display: block;
-        top: auto;
-        left: auto;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 16px 0 24px;
-        display: block;
-        align-items: stretch;
-        justify-content: stretch;
-    }
-
-    .hero_content {
-        position: relative;
-        margin: -220px auto 0;
-        padding: 18px 14px;
-        width: 80%;
-        max-width: 80%;
-        background: rgba(0, 0, 0, 0.35);
-        border-radius: 18px;
-        z-index: 3;
-    }
-
-    .hero_content h1 {
-        font-size: 20px;
-        width: 100%;
-        margin-bottom: 12px;
-    }
-
-    .hero_content p {
-        font-size: 12px;
-        width: 100%;
-        line-height: 1.45;
-    }
-}
-
