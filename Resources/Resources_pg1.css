@@ -116,22 +116,6 @@ header{
     padding: 5px;
 }
 
-#login, #signup
-{
-    width: 100px;
-    padding: 8px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-
-}
-
-#signup
-{
-    color: white;
-    background-color: #5976d5;
-    margin-left: 20px;
-}
 
 
 .hero
@@ -252,6 +236,7 @@ header{
 }
 
 .avatar-chip{
+justify-content: center;
     margin-top:10px;
 }
 

@@ -237,7 +237,8 @@ footer
     color: white;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    padding: 24px 20px;
+    box-sizing: border-box;
 }
 
 .footer_section
@@ -245,8 +246,10 @@ footer
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    text-align: center;
+    width: min(100%, 900px);
     padding: 20px 16px;
+    gap: 16px;
 }
 
 .brand_footer   
@@ -254,15 +257,14 @@ footer
     display: flex;
     text-align: center;
     align-items: center;
-    
-    /* margin-left: -115px; */
-    /* margin-top: 20px;  */
-    font-size: 18;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 18px;
 }
 
 .footer_section div img
 {
-
     width: 80px;
     object-fit: contain;
     position: relative;
@@ -275,6 +277,8 @@ footer
     align-items: center;
     text-align: center;
     gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
 hr
@@ -286,6 +290,7 @@ hr
 #line_three
 {
     text-align: center;
+    margin: 0;
 }
 
 
@@ -295,8 +300,8 @@ hr
     align-items: center;
     justify-content: center;
     gap: 10px;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    flex-wrap: wrap;
+    width: min(100%, 520px);
     margin-top: 12px;
 }
 
@@ -310,28 +315,32 @@ hr
     min-width: 260px;
 
 }
+
 #subscription input::placeholder
 {
     color: white;
-    background:none;
+    background: none;
 }
 
 #subscription button
 {
     color: white;
-    background:#55A65E;
-    border: none;   
+    background: #55A65E;
+    border: none;
     border-radius: 30px;
     padding: 8px 20px;
     cursor: pointer;
-
+    flex: 0 0 auto;
 }
+
 .terms_and_policy
 {   
-    margin-top: 70px ;
+    margin-top: 20px;
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .terms_and_policy hr
@@ -345,16 +354,15 @@ hr
     text-decoration: none;
 }
 
-
 #line_four
 {
     text-align: center;
     font-size: 16px;
     font-weight: 300;
+    margin: 0;
 }
 
-
-
+/* Footer tweaks for very small screens (<=450px) */
 @media (max-width:450px){
     footer{
         flex-direction:column;
@@ -376,4 +384,83 @@ hr
     #subscription button{width:100%;max-width:200px}
     .terms_and_policy{flex-direction:column;gap:8px;margin-top:12px}
     hr{display:none}
+}
+
+
+
+@media (max-width:540px) {
+.brand
+{
+    display: flex;
+    text-align: center;
+    float: left;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.container h2
+{
+    font-size: 28px;
+    width: 80%;
+}
+
+}
+
+@media (max-width:450px) {
+ 
+
+.brand
+{
+    display: flex;
+    text-align: center;
+    float: left;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+    form
+{
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#otherText
+{   width: 100%;
+    font-size: 12px;
+    background-color: white;
+    padding: 10px 20px;
+    height: 100px;
+
+}
+
+.container
+{
+    margin: 0 auto;
+}
+.container h2
+{
+    font-size: 32px;
+    width: 80%;
+}
+
+.progress-bar{
+    margin-top: -120px;
+    width:280px;
+    display:flex;
+    gap:8px;
+    margin-bottom:35px;
+}
+
+    form .box
+    {font-size: 12px;
+        
+    }
+}
+
+@media (max-width:350px) {
+     form .box
+    {font-size: 11px;
+        
+    }
 }

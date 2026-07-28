@@ -40,11 +40,3 @@ document.querySelector('#end').addEventListener
         }
 );
 
-
-
-const textarea = document.getElementById("otherText");
-const count = document.getElementById("count");
-
-textarea.addEventListener("input", () => {
-    count.textContent = textarea.value.length;
-});

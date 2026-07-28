@@ -344,90 +344,120 @@ hr
 
 /* PopUPS */
 
-.popup,.popup2{
+.popup,
+.popup2 {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 500px;
+    width: min(92vw, 500px);
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
     background: white;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 12px 2px rgba(0,0,0,.3);
-
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .3);
     display: none;
-    z-index: 1;
+    z-index: 1000;
 }
 
-.pop_head 
-{   
-    margin: 0px;
-    height: 60px;
-    width: 500px;
-    margin-left: 0px;
+.pop_head {
+    margin: 0;
+    min-height: 60px;
+    width: 100%;
+    padding: 16px 20px;
     background-color: #315DEC;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    object-fit: cover;
-
     color: white;
+    box-sizing: border-box;
 }
 
-.msg
-{
+.msg {
     font-weight: bolder;
 }
 
-.content
-{  
+.content {
     text-align: center;
-    margin-top: 30px ; 
-    margin-bottom: -40px;
+    margin: 24px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
- 
-    
 }
 
-
-
-
-.pop_head img{
+.pop_head img {
     width: 50px;
+    max-width: 100%;
+    height: auto;
     position: relative;
     top: -5px;
 }
 
-.icon img
-{
+.icon img {
     width: 150px;
-  
+    max-width: 100%;
+    height: auto;
 }
 
-.content_txt
-{ 
-   margin: 0 70px;
-   font-weight: 100;
-   color: rgb(188, 171, 171);
+.content_txt {
+    margin: 0 16px;
+    font-weight: 100;
+    color: rgb(188, 171, 171);
 }
-
-
 
 .popup,
-.popup2{
+.popup2 {
     display: none;
 }
 
-/* Show first popup initially */
 .popup.active,
-.popup2.active{
-    display: flex;      /* or block depending on your design */
+.popup2.active {
+    display: flex;
+    flex-direction: column;
 }
 
+@media (max-width: 600px) {
+    .popup,
+    .popup2 {
+        width: min(94vw, 420px);
+        border-radius: 16px;
+    }
+
+    .pop_head {
+        min-height: 54px;
+        padding: 12px 16px;
+    }
+
+    .content {
+        margin: 20px 16px 16px;
+    }
+
+    .content_txt {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .icon img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .popup,
+    .popup2 {
+        width: min(96vw, 360px);
+    }
+
+    .pop_head {
+        font-size: 14px;
+    }
+
+    .content_txt {
+        font-size: 13px;
+    }
+}
 
 @media (max-width:540px) {
        
